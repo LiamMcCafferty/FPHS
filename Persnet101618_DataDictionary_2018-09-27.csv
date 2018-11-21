@@ -1,0 +1,663 @@
+"Variable / Field Name","Form Name","Section Header","Field Type","Field Label","Choices, Calculations, OR Slider Labels","Field Note","Text Validation Type OR Show Slider Number","Text Validation Min","Text Validation Max",Identifier?,"Branching Logic (Show field only if...)","Required Field?","Custom Alignment","Question Number (surveys only)","Matrix Group Name","Matrix Ranking?","Field Annotation"
+study_id,persnet_survey,,text,study_id,,,,,,y,,,,,,,
+infosheet_text,persnet_survey,,descriptive,"<span style = ""font-weight:lighter"">We have included here for your review the Football Players Health Study Personal Network Study Informed<br/> Consent Sheet.
+
+This document contains more information about the study and may help to answer any other questions you<br/> might have before completing the survey. 
+
+<b>Please review this document before taking part in the study.</b>
+</span>",,,,,,,,,,,,,
+participate_text,persnet_survey,,descriptive,"<u>How do I agree to participate</u>?
+
+<span style = ""font-weight:lighter"">After reviewing the Informed Consent document, if you continue with this survey and submit your answers,<br/> you are saying that:
+
+<b><ol><li></b>You agree to take part in this research</li><li>You feel like you understand what you are getting into</li><li>You understand that you are free to leave the study at any time</li></ol>
+</font>",,,,,,,,,,,,,
+age,persnet_survey,"<font size = 3><u>Tell us a little about yourself!</u></font>",text,"Your Age",,,integer,,120,,,,,,,,
+race,persnet_survey,,checkbox,"Race <br/><span style = ""font-weight:lighter; font-style:italic"">(Select all that apply)</span>","1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 88, Skip question",,,,,,,,,,,,
+ethnicity,persnet_survey,,radio,Ethnicity,"0, Hispanic or Latino | 1, NOT Hispanic or Latino | 99, Unknown | 88, Skip question",,,,,,,,,,,,
+edu,persnet_survey,,dropdown,"Education level","1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 88, Prefer not to answer",,,,,,,,,,,,
+zip,persnet_survey,,text,"Your Zip Code",,,zipcode,,,y,,,,,,,
+employment,persnet_survey,,checkbox,"Are you currently employed? <br/><span style = ""font-weight:lighter;font-style:italic"">(Select all that apply)</span>","1, Yes - I work in Football | 2, Yes - I work outside of Football | 3, Retired | 0, No | 4, Student | 5, Looking for work",,,,,,,,,,cur_employement,,"Working in football means any level--coach, scout, administration, other."
+occupation,persnet_survey,,dropdown,"Current Occupation","1, Executive, manager | 2, Sales or clerical worker | 3, Mechanic, electrician, skilled worker | 4, Machine operator, inspector, bus/cab driver | 5, Service worker (e.g., janitor, guard) | 6, Professional (e.g., nurse, lawyer, teacher, etc.) | 7, Business owner | 8, Laborer, unskilled worker | 9, Farming | 10, Military | 77, Other",,,,,,"[employment(2)] = '1'",,,,,,
+income,persnet_survey,,dropdown,"What is your approximate household net worth?
+
+","1, less than $5,000 | 2, $5,000 to $49,000 | 3, $50,000 to $169,000 | 4, $170,000 to $499,000 | 5, more than $500,000","This is the value of all the assets of people in your household <br/> (like housing, cars, stock, retirement funds, and business <br/> ownership) minus any debt or loans you and household members <br/> may have (like mortgages, credit card debt or car, school, or <br/> business loans). This does not include your regular income.",,,,,,,,,,,
+house_number,persnet_survey,,text,"How many people are in your household?",,,integer,0,,,,,,,,,
+name1,persnet_survey,"<u><font size=3>Who is in your Personal Network?</u></font>
+
+<span style=""font-weight:normal;"">In order to understand your personal network and the different ways in which people are important to you and support you, we are now going to help you create a master list of people by asking you who falls into these three categories:
+
+<div style = ""padding-left:15em""><li>Who do you discuss important personal matters with?</li><li>Who do you often socialize with?</li><li>Who provides you support for your health needs?</li></div>
+We are <b>only</b> interested in people who fall into one of those three categories, and we'd like you to think only about your <b>current</b> <u>network of people in your life who are age 18 or older</u>.
+
+Please only use first names, nicknames, or initials - DO NOT USE FULL NAMES. If two people have the same first name, then add a last initial. You can enter any identifier you'd like in place of a name - all that matters is that you know the person you mean, as the ""names"" you enter will be used later in the survey. Even though they might not be full or real names, this information will be kept strictly confidential between you and the Harvard Football Players Health Study.
+</span>
+
+<center><font size = 3><b>- - - - - - - - - - - -</b></font></center>
+
+From time to time, most people discuss important personal matters with other people. Who do you typically do that with?
+
+<span style = ""font-weight:lighter"">Please do not list full names.</span>",text,"Name 1",,,,,,,,,,,,,
+name2,persnet_survey,,text,"Name 2",,,,,,,,,,,,,
+name3,persnet_survey,,text,"Name 3",,,,,,,,,,,,,
+name4,persnet_survey,,text,"Name 4",,,,,,,,,,,,,
+name5,persnet_survey,,text,"Name 5",,,,,,,,,,,,,
+more_names_1,persnet_survey,,notes,"More names, separated by commas (if needed):",,,,,,,,,,,,,
+name6,persnet_survey,"Who do you often socialize with? For example, these are people with whom you go out to dinner, go on a trip, or hang out.
+
+<span style=""font-weight:normal;"">Please do not list full names, and don't worry about duplicates from the previous section.</span>",text,"Name 1",,,,,,,,,,,,,
+name7,persnet_survey,,text,"Name 2",,,,,,,,,,,,,
+name8,persnet_survey,,text,"Name 3",,,,,,,,,,,,,
+name9,persnet_survey,,text,"Name 4",,,,,,,,,,,,,
+name10,persnet_survey,,text,"Name 5",,,,,,,,,,,,,
+more_names_2,persnet_survey,,notes,"More names, separated by commas (if needed):",,,,,,,,,,,,,
+name11,persnet_survey,"Think about people who encourage you to stay healthy by giving you motivation, advice, or direct help.  Who provides this kind of support for your health?
+
+<span style=""font-weight:normal;"">Please do not list full names, and don't worry about duplicates from the previous section.</span>",text,"Name 1",,,,,,,,,,,,,
+name12,persnet_survey,,text,"Name 2",,,,,,,,,,,,,
+name13,persnet_survey,,text,"Name 3",,,,,,,,,,,,,
+name14,persnet_survey,,text,"Name 4",,,,,,,,,,,,,
+name15,persnet_survey,,text,"Name 5",,,,,,,,,,,,,
+more_names_3,persnet_survey,,notes,"More names, separated by commas (if needed):",,,,,,,,,,,,,
+name_1,persnet_survey,"<u><font size=3>Finalizing your list of people:</u></font>
+
+<span style = ""font-weight:lighter""><b>Now, we are going to create a master list from the names you provided above</b>. Know that we are only going to use the first 5 names you entered from each section above.
+
+<font color = ""red""><b>Please read these instructions carefully:</b></font><ul><li>For every individual person listed, <u>click the ""Keep"" button next to the first time their name appears in the list</u>. 
+If a person is listed more than once, only choose ""Keep"" once.</li><li>Make sure you click ""Keep"" for each unique identity.  If you do not click ""Keep,"" then the name will be removed.</li><li>All blanks and duplicates should be left as ""Remove"".</li></ul></span>",radio,[name1],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_2,persnet_survey,,radio,[name2],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_3,persnet_survey,,radio,[name3],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_4,persnet_survey,,radio,[name4],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_5,persnet_survey,,radio,[name5],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_6,persnet_survey,,radio,[name6],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_7,persnet_survey,,radio,[name7],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_8,persnet_survey,,radio,[name8],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_9,persnet_survey,,radio,[name9],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_10,persnet_survey,,radio,[name10],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_11,persnet_survey,,radio,[name11],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_12,persnet_survey,,radio,[name12],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_13,persnet_survey,,radio,[name13],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_14,persnet_survey,,radio,[name14],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+name_15,persnet_survey,,radio,[name15],"1, Keep | 0, Remove",,,,,,,y,,,unique,,"@DEFAULT=""0"""
+first,persnet_survey,,calc,"Number Filled in First 10 Slots","sum([name_1],[name_2],[name_3],[name_4],[name_5],[name_6],[name_7],[name_8],[name_9],[name_10])","This is just for us to keep track.",,,,,,,,,,,@HIDDEN-SURVEY
+size,persnet_survey,,calc,"Total number of social contacts","sum([name_1],[name_2],[name_3],[name_4],[name_5],[name_6],[name_7],[name_8],[name_9],[name_10],[name_11],[name_12],[name_13],[name_14],[name_15])","Total number of names you kept.",,,,,,,,,,,@HIDDEN-SURVEY
+tie1,persnet_survey,"<u><font size=3>Relationship Description</u></font>
+
+<span style=""font-weight:lighter"">We are now going to focus on the relationships in your personal network. If you notice some names missing, that is okay - we are only using the first 10 from your master list.
+
+Below should be a list of unique names without blanks. <b><font color = ""red"">If there are missing names from the first 10, duplicate names, or blanks, please STOP and go back to the previous section where you made your master list by choosing ""Keep"" for certain names.</font></b> Please review the instructions for that section, and adjust your ""Keep"" or ""Remove"" choices as needed.
+</span>
+
+We are interested in how close you feel to each person below. Compared to everyone you've listed, how close do you feel to each person?",radio,"How close do you feel to <font color = ""red"">[name1]</font>?","2, especially close | 1, not especially close",,,,,,"[name_1] = ""1""",y,,,,,
+tie2,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name2]</font>?","2, especially close | 1, not especially close",,,,,,"[name_2] = ""1""",y,,,,,
+tie3,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name3]</font>?","2, especially close | 1, not especially close",,,,,,"[name_3] = ""1""",y,,,,,
+tie4,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name4]</font>?","2, especially close | 1, not especially close",,,,,,"[name_4] = ""1""",y,,,,,
+tie5,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name5]</font>?","2, especially close | 1, not especially close",,,,,,"[name_5] = ""1""",y,,,,,
+tie6,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name6]</font>?","2, especially close | 1, not especially close",,,,,,"[name_6] = ""1""",y,,,,,
+tie7,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name7]</font>?","2, especially close | 1, not especially close",,,,,,"[name_7] = ""1""",y,,,,,
+tie8,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name8]</font>?","2, especially close | 1, not especially close",,,,,,"[name_8] = ""1""",y,,,,,
+tie9,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name9]</font>?","2, especially close | 1, not especially close",,,,,,"[name_9] = ""1""",y,,,,,
+tie10,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name10]</font>?","2, especially close | 1, not especially close",,,,,,"[name_10] = ""1""",y,,,,,
+tie11,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name11]</font>?","2, especially close | 1, not especially close",,,,,,"[first] < 10 and [name_11] = ""1""",y,,,,,
+tie12,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name12]</font>?","2, especially close | 1, not especially close",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",y,,,,,
+tie13,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name13]</font>?","2, especially close | 1, not especially close",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",y,,,,,
+tie14,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name14]</font>?","2, especially close | 1, not especially close",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",y,,,,,
+tie15,persnet_survey,,radio,"How close do you feel to <font color = ""red"">[name15]</font>?","2, especially close | 1, not especially close",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",y,,,,,
+prog_marker1,persnet_survey,,descriptive,"<div style = ""padding-left:2em""><font color = ""green""; size = 3>You've just finished the most important part of the survey&#8212 you're 25% done!</font></div>",,,,,,,"[tie1] <>"""" OR
+[tie2] <>"""" OR
+[tie3] <>"""" OR
+[tie4] <>"""" OR
+[tie5] <>"""" OR
+[tie6] <>"""" OR
+[tie7] <>"""" OR
+[tie8] <>"""" OR
+[tie9] <>"""" OR
+[tie10] <>"""" OR
+[tie11] <>"""" OR
+[tie12] <>"""" OR
+[tie13] <>"""" OR
+[tie14] <>"""" OR
+[tie15] <>""""",,,,,,
+a_tie1,persnet_survey,"<span style=""font-weight:lighter"">We will now focus on the relationship between each pair of people you mentioned. For example, we will ask about <font color = ""red""><b>[name1]</b></font> and <font color = ""red""><b>[name2]</b></font>. For each pair, we will ask whether they are total strangers, in-between, or especially close. Here is what we mean by each term:
+
+<b><i>Total strangers:</i></b> The two people wouldn't recognize one another if they met on the street.
+
+<b><i>In-between:</i></b> Relationships in the middle of total strangers and especially close. Typically, these people are casual acquaintances.
+
+<b><i>Especially close: </i></b>As close or closer to each other than they are to you.
+
+<font color = ""red""><b>Take your time. This can be difficult.</font></b>",radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name2]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND [name_2] = ""1""",y,,,,,
+a_tie2,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name3]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND [name_3] = ""1""",y,,,,,
+a_tie3,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name4]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND [name_4] = ""1""",y,,,,,
+a_tie4,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name5]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND [name_5] = ""1""",y,,,,,
+a_tie5,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name6]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND [name_6] = ""1""",y,,,,,
+a_tie6,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name7]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND [name_7] = ""1""",y,,,,,
+a_tie7,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name8]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND [name_8] = ""1""",y,,,,,
+a_tie8,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name9]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND [name_9] = ""1""",y,,,,,
+a_tie9,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name10]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND [name_10] = ""1""",y,,,,,
+a_tie10,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name11]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND ([first] < 10 and [name_11] = ""1"")",y,,,,,
+a_tie11,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name12]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND (sum([first],[name_11])<10 and [name_12]=""1"")",y,,,,,
+a_tie12,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie13,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie14,persnet_survey,,radio,"Is <font color=red>[name1]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_1] = ""1"" AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name1,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"[name_2] = ""1"" AND ([name_3] = 1 OR [name_4] = 1 OR [name_5] = 1 OR [name_6] = 1 OR [name_7] = 1 OR [name_8] = 1 OR [name_9] = 1 OR [name_10] = 1 OR [name_11] = 1 OR [name_12] = 1 OR [name_13] = 1 OR [name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie15,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name3]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND [name_3] = ""1""",y,,,,,
+a_tie16,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name4]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND [name_4] = ""1""",y,,,,,
+a_tie17,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name5]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND [name_5] = ""1""",y,,,,,
+a_tie18,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name6]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND [name_6] = ""1""",y,,,,,
+a_tie19,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name7]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND [name_7] = ""1""",y,,,,,
+a_tie20,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name8]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND [name_8] = ""1""",y,,,,,
+a_tie21,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name9]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND [name_9] = ""1""",y,,,,,
+a_tie22,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name10]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND [name_10] = ""1""",y,,,,,
+a_tie23,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name11]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND ([first] < 10 and [name_11] = ""1"")",y,,,,,
+a_tie24,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name12]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND (sum([first],[name_11])<10 and [name_12]=""1"")",y,,,,,
+a_tie25,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie26,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie27,persnet_survey,,radio,"Is <font color=red>[name2]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_2] = ""1"" AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name2,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"[name_3] = 1 AND ([name_4] = 1 OR [name_5] = 1 OR [name_6] = 1 OR [name_7] = 1 OR [name_8] = 1 OR [name_9] = 1 OR [name_10] = 1 OR [name_11] = 1 OR [name_12] = 1 OR [name_13] = 1 OR [name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie28,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name4]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND [name_4] = ""1""",y,,,,,
+a_tie29,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name5]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND [name_5] = ""1""",y,,,,,
+a_tie30,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name6]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND [name_6] = ""1""",y,,,,,
+a_tie31,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name7]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND [name_7] = ""1""",y,,,,,
+a_tie32,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name8]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND [name_8] = ""1""",y,,,,,
+a_tie33,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name9]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND [name_9] = ""1""",y,,,,,
+a_tie34,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name10]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND [name_10] = ""1""",y,,,,,
+a_tie35,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name11]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND ([first] < 10 and [name_11] = ""1"")",y,,,,,
+a_tie36,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name12]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND (sum([first],[name_11])<10 and [name_12]=""1"")",y,,,,,
+a_tie37,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie38,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie39,persnet_survey,,radio,"Is <font color=red>[name3]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_3] = ""1"" AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name3,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"[name_4] = 1 AND ([name_5] = 1 OR [name_6] = 1 OR [name_7] = 1 OR [name_8] = 1 OR [name_9] = 1 OR [name_10] = 1 OR [name_11] = 1 OR [name_12] = 1 OR [name_13] = 1 OR [name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie40,persnet_survey,,radio,"Is <font color=red>[name4]</font color> a total stranger, especially close, or in-between with <font color=red>[name5]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_4] = ""1"" AND [name_5] = ""1""",y,,,,,
+a_tie41,persnet_survey,,radio,"Is <font color=red>[name4]</font color> a total stranger, especially close, or in-between with <font color=red>[name6]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_4] = ""1"" AND [name_6] = ""1""",y,,,,,
+a_tie42,persnet_survey,,radio,"Is <font color=red>[name4]</font color> a total stranger, especially close, or in-between with <font color=red>[name7]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_4] = ""1"" AND [name_7] = ""1""",y,,,,,
+a_tie43,persnet_survey,,radio,"Is <font color=red>[name4]</font color> a total stranger, especially close, or in-between with <font color=red>[name8]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_4] = ""1"" AND [name_8] = ""1""",y,,,,,
+a_tie44,persnet_survey,,radio,"Is <font color=red>[name4]</font color> a total stranger, especially close, or in-between with <font color=red>[name9]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_4] = ""1"" AND [name_9] = ""1""",y,,,,,
+a_tie45,persnet_survey,,radio,"Is <font color=red>[name4]</font color> a total stranger, especially close, or in-between with <font color=red>[name10]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_4] = ""1"" AND [name_10] = ""1""",y,,,,,
+a_tie46,persnet_survey,,radio,"Is <font color=red>[name4]</font color> a total stranger, especially close, or in-between with <font color=red>[name11]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_4] = ""1"" AND ([first] < 10 and [name_11] = ""1"")",y,,,,,
+a_tie47,persnet_survey,,radio,"Is <font color=red>[name4]</font color> a total stranger, especially close, or in-between with <font color=red>[name12]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_4] = ""1"" AND (sum([first],[name_11])<10 and [name_12]=""1"")",y,,,,,
+a_tie48,persnet_survey,,radio,"Is <font color=red>[name4]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_4] = ""1"" AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie49,persnet_survey,,radio,"Is <font color=red>[name4]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_4] = ""1"" AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie50,persnet_survey,,radio,"Is <font color=red>[name4]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_4] = ""1"" AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name4,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"[name_5] = 1 AND ([name_6] = 1 OR [name_7] = 1 OR [name_8] = 1 OR [name_9] = 1 OR [name_10] = 1 OR [name_11] = 1 OR [name_12] = 1 OR [name_13] = 1 OR [name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie51,persnet_survey,,radio,"Is <font color=red>[name5]</font color> a total stranger, especially close, or in-between with <font color=red>[name6]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_5] = ""1"" AND [name_6] = ""1""",y,,,,,
+a_tie52,persnet_survey,,radio,"Is <font color=red>[name5]</font color> a total stranger, especially close, or in-between with <font color=red>[name7]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_5] = ""1"" AND [name_7] = ""1""",y,,,,,
+a_tie53,persnet_survey,,radio,"Is <font color=red>[name5]</font color> a total stranger, especially close, or in-between with <font color=red>[name8]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_5] = ""1"" AND [name_8] = ""1""",y,,,,,
+a_tie54,persnet_survey,,radio,"Is <font color=red>[name5]</font color> a total stranger, especially close, or in-between with <font color=red>[name9]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_5] = ""1"" AND [name_9] = ""1""",y,,,,,
+a_tie55,persnet_survey,,radio,"Is <font color=red>[name5]</font color> a total stranger, especially close, or in-between with <font color=red>[name10]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_5] = ""1"" AND [name_10] = ""1""",y,,,,,
+a_tie56,persnet_survey,,radio,"Is <font color=red>[name5]</font color> a total stranger, especially close, or in-between with <font color=red>[name11]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_5] = ""1"" AND ([first] < 10 and [name_11] = ""1"")",y,,,,,
+a_tie57,persnet_survey,,radio,"Is <font color=red>[name5]</font color> a total stranger, especially close, or in-between with <font color=red>[name12]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_5] = ""1"" AND (sum([first],[name_11])<10 and [name_12]=""1"")",y,,,,,
+a_tie58,persnet_survey,,radio,"Is <font color=red>[name5]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_5] = ""1"" AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie59,persnet_survey,,radio,"Is <font color=red>[name5]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_5] = ""1"" AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie60,persnet_survey,,radio,"Is <font color=red>[name5]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_5] = ""1"" AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name5,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"[name_6] = 1 AND ([name_7] = 1 OR [name_8] = 1 OR [name_9] = 1 OR [name_10] = 1 OR [name_11] = 1 OR [name_12] = 1 OR [name_13] = 1 OR [name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie61,persnet_survey,,radio,"Is <font color=red>[name6]</font color> a total stranger, especially close, or in-between with <font color=red>[name7]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_6] = ""1"" AND [name_7] = ""1""",y,,,,,
+a_tie62,persnet_survey,,radio,"Is <font color=red>[name6]</font color> a total stranger, especially close, or in-between with <font color=red>[name8]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_6] = ""1"" AND [name_8] = ""1""",y,,,,,
+a_tie63,persnet_survey,,radio,"Is <font color=red>[name6]</font color> a total stranger, especially close, or in-between with <font color=red>[name9]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_6] = ""1"" AND [name_9] = ""1""",y,,,,,
+a_tie64,persnet_survey,,radio,"Is <font color=red>[name6]</font color> a total stranger, especially close, or in-between with <font color=red>[name10]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_6] = ""1"" AND [name_10] = ""1""",y,,,,,
+a_tie65,persnet_survey,,radio,"Is <font color=red>[name6]</font color> a total stranger, especially close, or in-between with <font color=red>[name11]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_6] = ""1"" AND ([first] < 10 and [name_11] = ""1"")",y,,,,,
+a_tie66,persnet_survey,,radio,"Is <font color=red>[name6]</font color> a total stranger, especially close, or in-between with <font color=red>[name12]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_6] = ""1"" AND (sum([first],[name_11])<10 and [name_12]=""1"")",y,,,,,
+a_tie67,persnet_survey,,radio,"Is <font color=red>[name6]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_6] = ""1"" AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie68,persnet_survey,,radio,"Is <font color=red>[name6]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_6] = ""1"" AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie69,persnet_survey,,radio,"Is <font color=red>[name6]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_6] = ""1"" AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name6,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"[name_7] = 1  AND ([name_8] = 1 OR [name_9] = 1 OR [name_10] = 1 OR [name_11] = 1 OR [name_12] = 1 OR [name_13] = 1 OR [name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie70,persnet_survey,,radio,"Is <font color=red>[name7]</font color> a total stranger, especially close, or in-between with <font color=red>[name8]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_7] = ""1"" AND [name_8] = ""1""",y,,,,,
+a_tie71,persnet_survey,,radio,"Is <font color=red>[name7]</font color> a total stranger, especially close, or in-between with <font color=red>[name9]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_7] = ""1"" AND [name_9] = ""1""",y,,,,,
+a_tie72,persnet_survey,,radio,"Is <font color=red>[name7]</font color> a total stranger, especially close, or in-between with <font color=red>[name10]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_7] = ""1"" AND [name_10] = ""1""",y,,,,,
+a_tie73,persnet_survey,,radio,"Is <font color=red>[name7]</font color> a total stranger, especially close, or in-between with <font color=red>[name11]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_7] = ""1"" AND ([first] < 10 and [name_11] = ""1"")",y,,,,,
+a_tie74,persnet_survey,,radio,"Is <font color=red>[name7]</font color> a total stranger, especially close, or in-between with <font color=red>[name12]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_7] = ""1"" AND (sum([first],[name_11])<10 and [name_12]=""1"")",y,,,,,
+a_tie75,persnet_survey,,radio,"Is <font color=red>[name7]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_7] = ""1"" AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie76,persnet_survey,,radio,"Is <font color=red>[name7]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_7] = ""1"" AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie77,persnet_survey,,radio,"Is <font color=red>[name7]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_7] = ""1"" AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name7,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"[name_8] = 1 AND ([name_9] = 1 OR [name_10] = 1 OR [name_11] = 1 OR [name_12] = 1 OR [name_13] = 1 OR [name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie78,persnet_survey,,radio,"Is <font color=red>[name8]</font color> a total stranger, especially close, or in-between with <font color=red>[name9]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_8] = ""1"" AND [name_9] = ""1""",y,,,,,
+a_tie79,persnet_survey,,radio,"Is <font color=red>[name8]</font color> a total stranger, especially close, or in-between with <font color=red>[name10]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_8] = ""1"" AND [name_10] = ""1""",y,,,,,
+a_tie80,persnet_survey,,radio,"Is <font color=red>[name8]</font color> a total stranger, especially close, or in-between with <font color=red>[name11]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_8] = ""1"" AND ([first] < 10 and [name_11] = ""1"")",y,,,,,
+a_tie81,persnet_survey,,radio,"Is <font color=red>[name8]</font color> a total stranger, especially close, or in-between with <font color=red>[name12]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_8] = ""1"" AND (sum([first],[name_11])<10 and [name_12]=""1"")",y,,,,,
+a_tie82,persnet_survey,,radio,"Is <font color=red>[name8]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_8] = ""1"" AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie83,persnet_survey,,radio,"Is <font color=red>[name8]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_8] = ""1"" AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie84,persnet_survey,,radio,"Is <font color=red>[name8]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_8] = ""1"" AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name8,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"[name_9] = 1 AND ([name_10] = 1 OR [name_11] = 1 OR [name_12] = 1 OR [name_13] = 1 OR [name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie85,persnet_survey,,radio,"Is <font color=red>[name9]</font color> a total stranger, especially close, or in-between with <font color=red>[name10]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_9] = ""1"" AND [name_10] = ""1""",y,,,,,
+a_tie86,persnet_survey,,radio,"Is <font color=red>[name9]</font color> a total stranger, especially close, or in-between with <font color=red>[name11]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_9] = ""1"" AND ([first] < 10 and [name_11] = ""1"")",y,,,,,
+a_tie87,persnet_survey,,radio,"Is <font color=red>[name9]</font color> a total stranger, especially close, or in-between with <font color=red>[name12]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_9] = ""1"" AND (sum([first],[name_11])<10 and [name_12]=""1"")",y,,,,,
+a_tie88,persnet_survey,,radio,"Is <font color=red>[name9]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_9] = ""1"" AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie89,persnet_survey,,radio,"Is <font color=red>[name9]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_9] = ""1"" AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie90,persnet_survey,,radio,"Is <font color=red>[name9]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_9] = ""1"" AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name9,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"[name_10] = 1 AND ([name_11] = 1 OR [name_12] = 1 OR [name_13] = 1 OR [name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie91,persnet_survey,,radio,"Is <font color=red>[name10]</font color> a total stranger, especially close, or in-between with <font color=red>[name11]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_10] = ""1"" AND ([first] < 10 and [name_11] = ""1"")",y,,,,,
+a_tie92,persnet_survey,,radio,"Is <font color=red>[name10]</font color> a total stranger, especially close, or in-between with <font color=red>[name12]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_10] = ""1"" AND (sum([first],[name_11])<10 and [name_12]=""1"")",y,,,,,
+a_tie93,persnet_survey,,radio,"Is <font color=red>[name10]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_10] = ""1"" AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie94,persnet_survey,,radio,"Is <font color=red>[name10]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_10] = ""1"" AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie95,persnet_survey,,radio,"Is <font color=red>[name10]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"[name_10] = ""1"" AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name10,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"([first] < 10 and [name_11] = ""1"") AND (sum([first],[name_11])<10) AND ([name_12] = 1 OR [name_13] = 1 OR [name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie96,persnet_survey,,radio,"Is <font color=red>[name11]</font color> a total stranger, especially close, or in-between with <font color=red>[name12]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"([first] < 10 and [name_11] = ""1"") AND (sum([first],[name_11])<10 and [name_12]=""1"")",y,,,,,
+a_tie97,persnet_survey,,radio,"Is <font color=red>[name11]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"([first] < 10 and [name_11] = ""1"") AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie98,persnet_survey,,radio,"Is <font color=red>[name11]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"([first] < 10 and [name_11] = ""1"") AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie99,persnet_survey,,radio,"Is <font color=red>[name11]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"([first] < 10 and [name_11] = ""1"") AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name11,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"([name_12]=""1"") AND (sum([first],[name_11],[name_12])<10) AND ([name_13] = 1 OR [name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie100,persnet_survey,,radio,"Is <font color=red>[name12]</font color> a total stranger, especially close, or in-between with <font color=red>[name13]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"(sum([first],[name_11])<10 and [name_12]=""1"") AND (sum([first],[name_11],[name_12])<10 and [name_13]=""1"")",y,,,,,
+a_tie101,persnet_survey,,radio,"Is <font color=red>[name12]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"(sum([first],[name_11])<10 and [name_12]=""1"") AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie102,persnet_survey,,radio,"Is <font color=red>[name12]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"(sum([first],[name_11])<10 and [name_12]=""1"") AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name12,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"([name_13]=""1"") AND (sum([first],[name_11],[name_12],[name_13])<10) AND ([name_14] = 1 OR [name_15] = 1)",,,,,,
+a_tie103,persnet_survey,,radio,"Is <font color=red>[name13]</font color> a total stranger, especially close, or in-between with <font color=red>[name14]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"(sum([first],[name_11],[name_12])<10 and [name_13]=""1"") AND (sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"")",y,,,,,
+a_tie104,persnet_survey,,radio,"Is <font color=red>[name13]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"(sum([first],[name_11],[name_12])<10 and [name_13]=""1"") AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+break_name13,persnet_survey,,descriptive,"<div style = ""padding-left:21em""><font size = 3><b>- - - - - - - - - - - -</b></font>",,,,,,,"(sum([first],[name_11],[name_12])<10 AND [name_14]=""1"") AND (sum([first],[name_11],[name_12],[name_13])<10) AND ([name_15] = 1)",,,,,,
+a_tie105,persnet_survey,,radio,"Is <font color=red>[name14]</font color> a total stranger, especially close, or in-between with <font color=red>[name15]</font color>?","0, stranger | 1, in-between | 2, especially close",,,,,,"(sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1"") AND (sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1"")",y,,,,,
+prog_marker2,persnet_survey,,descriptive,"<div style = ""padding-left:10em""><font color= ""green""; size = 3><b>You've just completed the hardest part&#8212 keep going!</font>
+</div>",,,,,,,"[a_tie1] <>"""" OR
+[a_tie2] <>"""" OR
+[a_tie3] <>"""" OR
+[a_tie4] <>"""" OR
+[a_tie5] <>"""" OR
+[a_tie6] <>"""" OR
+[a_tie7] <>"""" OR
+[a_tie8] <>"""" OR
+[a_tie9] <>"""" OR
+[a_tie10] <>"""" OR
+[a_tie11] <>"""" OR
+[a_tie12] <>"""" OR
+[a_tie13] <>"""" OR
+[a_tie14] <>"""" OR
+[a_tie15] <>"""" OR
+[a_tie16] <>"""" OR
+[a_tie17] <>"""" OR
+[a_tie18] <>"""" OR
+[a_tie19] <>"""" OR
+[a_tie20] <>"""" OR
+[a_tie21] <>"""" OR
+[a_tie22] <>"""" OR
+[a_tie23] <>"""" OR
+[a_tie24] <>"""" OR
+[a_tie25] <>"""" OR
+[a_tie26] <>"""" OR
+[a_tie27] <>"""" OR
+[a_tie28] <>"""" OR
+[a_tie29] <>"""" OR
+[a_tie30] <>"""" OR
+[a_tie31] <>"""" OR
+[a_tie32] <>"""" OR
+[a_tie33] <>"""" OR
+[a_tie34] <>"""" OR
+[a_tie35] <>"""" OR
+[a_tie36] <>"""" OR
+[a_tie37] <>"""" OR
+[a_tie38] <>"""" OR
+[a_tie39] <>"""" OR
+[a_tie40] <>"""" OR
+[a_tie41] <>"""" OR
+[a_tie42] <>"""" OR
+[a_tie43] <>"""" OR
+[a_tie44] <>"""" OR
+[a_tie45] <>"""" OR
+[a_tie46] <>"""" OR
+[a_tie47] <>"""" OR
+[a_tie48] <>"""" OR
+[a_tie49] <>"""" OR
+[a_tie50] <>"""" OR
+[a_tie51] <>"""" OR
+[a_tie52] <>"""" OR
+[a_tie53] <>"""" OR
+[a_tie54] <>"""" OR
+[a_tie55] <>"""" OR
+[a_tie56] <>"""" OR
+[a_tie57] <>"""" OR
+[a_tie58] <>"""" OR
+[a_tie59] <>"""" OR
+[a_tie60] <>"""" OR
+[a_tie61] <>"""" OR
+[a_tie62] <>"""" OR
+[a_tie63] <>"""" OR
+[a_tie64] <>"""" OR
+[a_tie65] <>"""" OR
+[a_tie66] <>"""" OR
+[a_tie67] <>"""" OR
+[a_tie68] <>"""" OR
+[a_tie69] <>"""" OR
+[a_tie70] <>"""" OR
+[a_tie71] <>"""" OR
+[a_tie72] <>"""" OR
+[a_tie73] <>"""" OR
+[a_tie74] <>"""" OR
+[a_tie75] <>"""" OR
+[a_tie76] <>"""" OR
+[a_tie77] <>"""" OR
+[a_tie78] <>"""" OR
+[a_tie79] <>"""" OR
+[a_tie80] <>"""" OR
+[a_tie81] <>"""" OR
+[a_tie82] <>"""" OR
+[a_tie83] <>"""" OR
+[a_tie84] <>"""" OR
+[a_tie85] <>"""" OR
+[a_tie86] <>"""" OR
+[a_tie87] <>"""" OR
+[a_tie88] <>"""" OR
+[a_tie89] <>"""" OR
+[a_tie90] <>"""" OR
+[a_tie91] <>"""" OR
+[a_tie92] <>"""" OR
+[a_tie93] <>"""" OR
+[a_tie94] <>"""" OR
+[a_tie95] <>"""" OR
+[a_tie96] <>"""" OR
+[a_tie97] <>"""" OR
+[a_tie98] <>"""" OR
+[a_tie99] <>"""" OR
+[a_tie100] <>"""" OR
+[a_tie101] <>"""" OR
+[a_tie102] <>"""" OR
+[a_tie103] <>"""" OR
+[a_tie104] <>"""" OR
+[a_tie105] <>""""",,,,,,
+name1support,persnet_survey,"<u><font size=3>About People in Your Network</u></font>
+
+<span style=""font-weight:normal;"">We are going to ask you a series of questions about each person in your network. In some cases, you may not know the exact answer for sure. Whenever possible, we would appreciate if you would guess -  try to use the ""don't know"" category as little as possible.</span>
+
+Which person or persons support you most often? You can choose more than one person. ",radio,[name1],"1, Supports me most often",,,,,,"[name_1] = ""1""",,,,support,,
+name2support,persnet_survey,,radio,[name2],"1, Supports me most often",,,,,,"[name_2] = ""1""",,,,support,,
+name3support,persnet_survey,,radio,[name3],"1, Supports me most often",,,,,,"[name_3] = ""1""",,,,support,,
+name4support,persnet_survey,,radio,[name4],"1, Supports me most often",,,,,,"[name_4] = ""1""",,,,support,,
+name5support,persnet_survey,,radio,[name5],"1, Supports me most often",,,,,,"[name_5] = ""1""",,,,support,,
+name6support,persnet_survey,,radio,[name6],"1, Supports me most often",,,,,,"[name_6] = ""1""",,,,support,,
+name7support,persnet_survey,,radio,[name7],"1, Supports me most often",,,,,,"[name_7] = ""1""",,,,support,,
+name8support,persnet_survey,,radio,[name8],"1, Supports me most often",,,,,,"[name_8] = ""1""",,,,support,,
+name9support,persnet_survey,,radio,[name9],"1, Supports me most often",,,,,,"[name_9] = ""1""",,,,support,,
+name10support,persnet_survey,,radio,[name10],"1, Supports me most often",,,,,,"[name_10] = ""1""",,,,support,,
+name11support,persnet_survey,,radio,[name11],"1, Supports me most often",,,,,,"[first] < 10 and [name_11] = ""1""",,,,support,,
+name12support,persnet_survey,,radio,[name12],"1, Supports me most often",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,support,,
+name13support,persnet_survey,,radio,[name13],"1, Supports me most often",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,support,,
+name14support,persnet_survey,,radio,[name14],"1, Supports me most often",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,support,,
+name15support,persnet_survey,,radio,[name15],"1, Supports me most often",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,support,,
+name1supptype,persnet_survey,"We are going to ask you about what types of support each person offers you.  These are the ways that we categorize each type of support:
+
+<ul><span style = ""font-weight:lighter""><li><b>Emotional Support: </b>This would be someone who you turn to when you need help managing personal situations, and share feelings of happiness or sadness.</li><li><b>Life Advice: </b>This would be someone who gives you advice on life decisions such as employment or places to live.</li><li><b>Financial Support: </b>This would be someone who gives you advice or provides direct help with your daily or overall finances.</li><li><b>Physical or Health Support: </b>This would be someone who gives you advice on or provides direct help with medications/supplements, choosing doctors or getting to appointments, mental health resources, managing health insurance, or physical assistance around your household.</li><li><b>Camaraderie: </b>This would be someone who provides support through understanding important experiences that you have had together.</li></ul></span>
+What kind of support does each person give you? (Select all that apply)",checkbox,[name1],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"[name_1] = ""1""",,,,support_type,,
+name2supptype,persnet_survey,,checkbox,[name2],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"[name_2] = ""1""",,,,support_type,,
+name3supptype,persnet_survey,,checkbox,[name3],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"[name_3] = ""1""",,,,support_type,,
+name4supptype,persnet_survey,,checkbox,[name4],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"[name_4] = ""1""",,,,support_type,,
+name5supptype,persnet_survey,,checkbox,[name5],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"[name_5] = ""1""",,,,support_type,,
+name6supptype,persnet_survey,,checkbox,[name6],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"[name_6] = ""1""",,,,support_type,,
+name7supptype,persnet_survey,,checkbox,[name7],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"[name_7] = ""1""",,,,support_type,,
+name8supptype,persnet_survey,,checkbox,[name8],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"[name_8] = ""1""",,,,support_type,,
+name9supptype,persnet_survey,,checkbox,[name9],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"[name_9] = ""1""",,,,support_type,,
+name10supptype,persnet_survey,,checkbox,[name10],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"[name_10] = ""1""",,,,support_type,,
+name11supptype,persnet_survey,,checkbox,[name11],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"[first] < 10 and [name_11] = ""1""",,,,support_type,,
+name12supptype,persnet_survey,,checkbox,[name12],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,support_type,,
+name13supptype,persnet_survey,,checkbox,[name13],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,support_type,,
+name14supptype,persnet_survey,,checkbox,[name14],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,support_type,,
+name15supptype,persnet_survey,,checkbox,[name15],"1, Emotional support | 2, Life advice | 3, Financial support | 4, Physical or Health <br> support | 5, Camaraderie | 0, None",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,support_type,,
+name1sex,persnet_survey,"What sex is each person in your network?",radio,[name1],"1, Male | 0, Female",,,,,,"[name_1] = ""1""",,,,sex,,
+name2sex,persnet_survey,,radio,[name2],"1, Male | 0, Female",,,,,,"[name_2] = ""1""",,,,sex,,
+name3sex,persnet_survey,,radio,[name3],"1, Male | 0, Female",,,,,,"[name_3] = ""1""",,,,sex,,
+name4sex,persnet_survey,,radio,[name4],"1, Male | 0, Female",,,,,,"[name_4] = ""1""",,,,sex,,
+name5sex,persnet_survey,,radio,[name5],"1, Male | 0, Female",,,,,,"[name_5] = ""1""",,,,sex,,
+name6sex,persnet_survey,,radio,[name6],"1, Male | 0, Female",,,,,,"[name_6] = ""1""",,,,sex,,
+name7sex,persnet_survey,,radio,[name7],"1, Male | 0, Female",,,,,,"[name_7] = ""1""",,,,sex,,
+name8sex,persnet_survey,,radio,[name8],"1, Male | 0, Female",,,,,,"[name_8] = ""1""",,,,sex,,
+name9sex,persnet_survey,,radio,[name9],"1, Male | 0, Female",,,,,,"[name_9] = ""1""",,,,sex,,
+name10sex,persnet_survey,,radio,[name10],"1, Male | 0, Female",,,,,,"[name_10] = ""1""",,,,sex,,
+name11sex,persnet_survey,,radio,[name11],"1, Male | 0, Female",,,,,,"[first] < 10 and [name_11] = ""1""",,,,sex,,
+name12sex,persnet_survey,,radio,[name12],"1, Male | 0, Female",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,sex,,
+name13sex,persnet_survey,,radio,[name13],"1, Male | 0, Female",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,sex,,
+name14sex,persnet_survey,,radio,[name14],"1, Male | 0, Female",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,sex,,
+name15sex,persnet_survey,,radio,[name15],"1, Male | 0, Female",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,sex,,
+name1neg,persnet_survey,"Do any people in your network have a negative influence on your health? For example, some people can passively or actively encourage you to smoke, not eat well, or not exercise.",yesno,[name1],,,,,,,"[name_1] = ""1""",,,,,,
+name2neg,persnet_survey,,yesno,[name2],,,,,,,"[name_2] = ""1""",,,,,,
+name3neg,persnet_survey,,yesno,[name3],,,,,,,"[name_3] = ""1""",,,,,,
+name4neg,persnet_survey,,yesno,[name4],,,,,,,"[name_4] = ""1""",,,,,,
+name5neg,persnet_survey,,yesno,[name5],,,,,,,"[name_5] = ""1""",,,,,,
+name6neg,persnet_survey,,yesno,[name6],,,,,,,"[name_6] = ""1""",,,,,,
+name7neg,persnet_survey,,yesno,[name7],,,,,,,"[name_7] = ""1""",,,,,,
+name8neg,persnet_survey,,yesno,[name8],,,,,,,"[name_8] = ""1""",,,,,,
+name9neg,persnet_survey,,yesno,[name9],,,,,,,"[name_9] = ""1""",,,,,,
+name10neg,persnet_survey,,yesno,[name10],,,,,,,"[name_10] = ""1""",,,,,,
+name11neg,persnet_survey,,yesno,[name11],,,,,,,"[first] < 10 and [name_11] = ""1""",,,,,,
+name12neg,persnet_survey,,yesno,[name12],,,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,,,
+name13neg,persnet_survey,,yesno,[name13],,,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,,,
+name14neg,persnet_survey,,yesno,[name14],,,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,,,
+name15neg,persnet_survey,,yesno,[name15],,,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,,,
+name1race,persnet_survey,"What is the race of each person in your social network? (Select all that apply)",checkbox,[name1],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"[name_1] = ""1""",,,,race,,
+name2race,persnet_survey,,checkbox,[name2],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"[name_2] = ""1""",,,,race,,
+name3race,persnet_survey,,checkbox,[name3],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"[name_3] = ""1""",,,,race,,
+name4race,persnet_survey,,checkbox,[name4],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"[name_4] = ""1""",,,,race,,
+name5race,persnet_survey,,checkbox,[name5],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"[name_5] = ""1""",,,,race,,
+name6race,persnet_survey,,checkbox,[name6],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"[name_6] = ""1""",,,,race,,
+name7race,persnet_survey,,checkbox,[name7],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"[name_7] = ""1""",,,,race,,
+name8race,persnet_survey,,checkbox,[name8],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"[name_8] = ""1""",,,,race,,
+name9race,persnet_survey,,checkbox,[name9],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"[name_9] = ""1""",,,,race,,
+name10race,persnet_survey,,checkbox,[name10],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"[name_10] = ""1""",,,,race,,
+name11race,persnet_survey,,checkbox,[name11],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"[first] < 10 and [name_11] = ""1""",,,,race,,
+name12race,persnet_survey,,checkbox,[name12],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,race,,
+name13race,persnet_survey,,checkbox,[name13],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,race,,
+name14race,persnet_survey,,checkbox,[name14],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,race,,
+name15race,persnet_survey,,checkbox,[name15],"1, Black or African American | 2, White | 3, American Indian/Alaska Native | 4, Asian | 5, Native Hawaiian or Other Pacific Islander | 77, Other | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,race,,
+name1educ,persnet_survey,"As far as you know, what is the highest level of education of each person?",radio,[name1],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"[name_1] = ""1""",,,,education,,
+name2educ,persnet_survey,,radio,[name2],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"[name_2] = ""1""",,,,education,,
+name3educ,persnet_survey,,radio,[name3],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"[name_3] = ""1""",,,,education,,
+name4educ,persnet_survey,,radio,[name4],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"[name_4] = ""1""",,,,education,,
+name5educ,persnet_survey,,radio,[name5],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"[name_5] = ""1""",,,,education,,
+name6educ,persnet_survey,,radio,[name6],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"[name_6] = ""1""",,,,education,,
+name7educ,persnet_survey,,radio,[name7],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"[name_7] = ""1""",,,,education,,
+name8educ,persnet_survey,,radio,[name8],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"[name_8] = ""1""",,,,education,,
+name9educ,persnet_survey,,radio,[name9],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"[name_9] = ""1""",,,,education,,
+name10educ,persnet_survey,,radio,[name10],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"[name_10] = ""1""",,,,education,,
+name11educ,persnet_survey,,radio,[name11],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"[first] < 10 and [name_11] = ""1""",,,,education,,
+name12educ,persnet_survey,,radio,[name12],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,education,,
+name13educ,persnet_survey,,radio,[name13],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,education,,
+name14educ,persnet_survey,,radio,[name14],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,education,,
+name15educ,persnet_survey,,radio,[name15],"1, Some high school or less | 2, High school grad | 3, Some college | 4, Associate degree | 5, Bachelor's degree | 6, Graduate degree | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,education,,
+name1speak,persnet_survey,"On average, how often do you communicate with each person in your network?",radio,[name1],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"[name_1] = ""1""",,,,speak_frequency,,
+name2speak,persnet_survey,,radio,[name2],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"[name_2] = ""1""",,,,speak_frequency,,
+name3speak,persnet_survey,,radio,[name3],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"[name_3] = ""1""",,,,speak_frequency,,
+name4speak,persnet_survey,,radio,[name4],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"[name_4] = ""1""",,,,speak_frequency,,
+name5speak,persnet_survey,,radio,[name5],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"[name_5] = ""1""",,,,speak_frequency,,
+name6speak,persnet_survey,,radio,[name6],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"[name_6] = ""1""",,,,speak_frequency,,
+name7speak,persnet_survey,,radio,[name7],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"[name_7] = ""1""",,,,speak_frequency,,
+name8speak,persnet_survey,,radio,[name8],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"[name_8] = ""1""",,,,speak_frequency,,
+name9speak,persnet_survey,,radio,[name9],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"[name_9] = ""1""",,,,speak_frequency,,
+name10speak,persnet_survey,,radio,[name10],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"[name_10] = ""1""",,,,speak_frequency,,
+name11speak,persnet_survey,,radio,[name11],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"[first] < 10 and [name_11] = ""1""",,,,speak_frequency,,
+name12speak,persnet_survey,,radio,[name12],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,speak_frequency,,
+name13speak,persnet_survey,,radio,[name13],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,speak_frequency,,
+name14speak,persnet_survey,,radio,[name14],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,speak_frequency,,
+name15speak,persnet_survey,,radio,[name15],"1, Daily | 2, Weekly | 3, Monthly | 4, Less often | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,speak_frequency,,
+name1length,persnet_survey,"For how many years have you known the following people?",radio,[name1],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"[name_1] = ""1""",,,,duration,,
+name2length,persnet_survey,,radio,[name2],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"[name_2] = ""1""",,,,duration,,
+name3length,persnet_survey,,radio,[name3],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"[name_3] = ""1""",,,,duration,,
+name4length,persnet_survey,,radio,[name4],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"[name_4] = ""1""",,,,duration,,
+name5length,persnet_survey,,radio,[name5],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"[name_5] = ""1""",,,,duration,,
+name6length,persnet_survey,,radio,[name6],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"[name_6] = ""1""",,,,duration,,
+name7length,persnet_survey,,radio,[name7],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"[name_7] = ""1""",,,,duration,,
+name8length,persnet_survey,,radio,[name8],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"[name_8] = ""1""",,,,duration,,
+name9length,persnet_survey,,radio,[name9],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"[name_9] = ""1""",,,,duration,,
+name10length,persnet_survey,,radio,[name10],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"[name_10] = ""1""",,,,duration,,
+name11length,persnet_survey,,radio,[name11],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"[first] < 10 and [name_11] = ""1""",,,,duration,,
+name12length,persnet_survey,,radio,[name12],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,duration,,
+name13length,persnet_survey,,radio,[name13],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,duration,,
+name14length,persnet_survey,,radio,[name14],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,duration,,
+name15length,persnet_survey,,radio,[name15],"1, Less than three | 2, Three to six | 3, More than six | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,duration,,
+name1relat,persnet_survey,"<span style=""font-weight:normal;"">We are now going to ask all the ways each person is connected to you. Some people can be connected to you in more than one way. For example, a man could be your brother, and he could belong to your church and be your lawyer.</span>
+
+For each person below, in what way are they connected to you?  (Select all that apply)",checkbox,[name1],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"[name_1] = ""1""",,,,relationship,,
+name2relat,persnet_survey,,checkbox,[name2],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"[name_2] = ""1""",,,,relationship,,
+name3relat,persnet_survey,,checkbox,[name3],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"[name_3] = ""1""",,,,relationship,,
+name4relat,persnet_survey,,checkbox,[name4],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"[name_4] = ""1""",,,,relationship,,
+name5relat,persnet_survey,,checkbox,[name5],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"[name_5] = ""1""",,,,relationship,,
+name6relat,persnet_survey,,checkbox,[name6],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"[name_6] = ""1""",,,,relationship,,
+name7relat,persnet_survey,,checkbox,[name7],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"[name_7] = ""1""",,,,relationship,,
+name8relat,persnet_survey,,checkbox,[name8],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"[name_8] = ""1""",,,,relationship,,
+name9relat,persnet_survey,,checkbox,[name9],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"[name_9] = ""1""",,,,relationship,,
+name10relat,persnet_survey,,checkbox,[name10],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"[name_10] = ""1""",,,,relationship,,
+name11relat,persnet_survey,,checkbox,[name11],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"[first] < 10 and [name_11] = ""1""",,,,relationship,,
+name12relat,persnet_survey,,checkbox,[name12],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,relationship,,
+name13relat,persnet_survey,,checkbox,[name13],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,relationship,,
+name14relat,persnet_survey,,checkbox,[name14],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,relationship,,
+name15relat,persnet_survey,,checkbox,[name15],"1, Spouse | 2, Family | 3, Friend | 4, Advisor | 5, Co - worker | 77, Other",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,relationship,,
+name1fb,persnet_survey,"Did anyone in your network play football? (Select the highest level in which they competed)",radio,[name1],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"[name_1] = ""1""",,,,names_football,,
+name2fb,persnet_survey,,radio,[name2],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"[name_2] = ""1""",,,,names_football,,
+name3fb,persnet_survey,,radio,[name3],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"[name_3] = ""1""",,,,names_football,,
+name4fb,persnet_survey,,radio,[name4],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"[name_4] = ""1""",,,,names_football,,
+name5fb,persnet_survey,,radio,[name5],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"[name_5] = ""1""",,,,names_football,,
+name6fb,persnet_survey,,radio,[name6],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"[name_6] = ""1""",,,,names_football,,
+name7fb,persnet_survey,,radio,[name7],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"[name_7] = ""1""",,,,names_football,,
+name8fb,persnet_survey,,radio,[name8],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"[name_8] = ""1""",,,,names_football,,
+name9fb,persnet_survey,,radio,[name9],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"[name_9] = ""1""",,,,names_football,,
+name10fb,persnet_survey,,radio,[name10],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"[name_10] = ""1""",,,,names_football,,
+name11fb,persnet_survey,,radio,[name11],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"[first] < 10 and [name_11] = ""1""",,,,names_football,,
+name12fb,persnet_survey,,radio,[name12],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,names_football,,
+name13fb,persnet_survey,,radio,[name13],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,names_football,,
+name14fb,persnet_survey,,radio,[name14],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,names_football,,
+name15fb,persnet_survey,,radio,[name15],"1, High school football | 2, College football | 3, Professional football | 0, Not a football player",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,names_football,,
+name1fbwith,persnet_survey,"Did anyone in your network play with you or coach you during your football career? (Select all that apply)",checkbox,[name1],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"[name_1] = ""1""",,,,fb_together,,
+name2fbwith,persnet_survey,,checkbox,[name2],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"[name_2] = ""1""",,,,fb_together,,
+name3fbwith,persnet_survey,,checkbox,[name3],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"[name_3] = ""1""",,,,fb_together,,
+name4fbwith,persnet_survey,,checkbox,[name4],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"[name_4] = ""1""",,,,fb_together,,
+name5fbwith,persnet_survey,,checkbox,[name5],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"[name_5] = ""1""",,,,fb_together,,
+name6fbwith,persnet_survey,,checkbox,[name6],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"[name_6] = ""1""",,,,fb_together,,
+name7fbwith,persnet_survey,,checkbox,[name7],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"[name_7] = ""1""",,,,fb_together,,
+name8fbwith,persnet_survey,,checkbox,[name8],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"[name_8] = ""1""",,,,fb_together,,
+name9fbwith,persnet_survey,,checkbox,[name9],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"[name_9] = ""1""",,,,fb_together,,
+name10fbwith,persnet_survey,,checkbox,[name10],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"[name_10] = ""1""",,,,fb_together,,
+name11fbwith,persnet_survey,,checkbox,[name11],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"[first] < 10 and [name_11] = ""1""",,,,fb_together,,
+name12fbwith,persnet_survey,,checkbox,[name12],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,fb_together,,
+name13fbwith,persnet_survey,,checkbox,[name13],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,fb_together,,
+name14fbwith,persnet_survey,,checkbox,[name14],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,fb_together,,
+name15fbwith,persnet_survey,,checkbox,[name15],"1, Former Professional Teammate | 2, Former Professional Coach | 3, Former HS or College Teammate | 4, Former HS or College Coach | 5, Other Football connection | 0, No football connection",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,fb_together,,
+name1age,persnet_survey,"How old is each person? If you don't know the exact age, your best guess is ok.",text,[name1],,,integer,0,150,,"[name_1] = ""1""",,,,,,
+name2age,persnet_survey,,text,[name2],,,integer,0,150,,"[name_2] = ""1""",,,,,,
+name3age,persnet_survey,,text,[name3],,,integer,0,150,,"[name_3] = ""1""",,,,,,
+name4age,persnet_survey,,text,[name4],,,integer,0,150,,"[name_4] = ""1""",,,,,,
+name5age,persnet_survey,,text,[name5],,,integer,0,150,,"[name_5] = ""1""",,,,,,
+name6age,persnet_survey,,text,[name6],,,integer,0,150,,"[name_6] = ""1""",,,,,,
+name7age,persnet_survey,,text,[name7],,,integer,0,150,,"[name_7] = ""1""",,,,,,
+name8age,persnet_survey,,text,[name8],,,integer,0,150,,"[name_8] = ""1""",,,,,,
+name9age,persnet_survey,,text,[name9],,,integer,0,150,,"[name_9] = ""1""",,,,,,
+name10age,persnet_survey,,text,[name10],,,integer,0,150,,"[name_10] = ""1""",,,,,,
+name11age,persnet_survey,,text,[name11],,,integer,0,150,,"[first] < 10 and [name_11] = ""1""",,,,,,
+name12age,persnet_survey,,text,[name12],,,integer,0,150,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,,,
+name13age,persnet_survey,,text,[name13],,,integer,0,150,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,,,
+name14age,persnet_survey,,text,[name14],,,integer,0,150,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,,,
+name15age,persnet_survey,,text,[name15],,,integer,0,150,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,,,
+prog_marker3,persnet_survey,,descriptive,"<div style = ""padding-left:10em""><font color = ""green""; size = 3> You've entered the survey's Red Zone! Almost Done!</font>
+</div>",,,,,,,"[name1age] <>"""" OR
+[name2age] <>"""" OR
+[name3age] <>"""" OR
+[name4age] <>"""" OR
+[name5age] <>"""" OR
+[name6age] <>"""" OR
+[name7age] <>"""" OR
+[name8age] <>"""" OR
+[name9age] <>"""" OR
+[name10age] <>"""" OR
+[name11age] <>"""" OR
+[name12age] <>"""" OR
+[name13age] <>"""" OR
+[name14age] <>"""" OR
+[name15age] <>""""",,,,,,
+alcohol,persnet_survey,"<u><font size=3>Health Habits</u></font>
+
+<span style = ""font-weight:lighter"">Please remember that the more carefully you can answer the following questions about yourself and those in your network, the more you are helping the research, and in turn helping your fellow teammates.</font>",radio,"Have you cut back on heavy drinking of alcohol <br/> in the past 3 months?","1, Yes | 0, No | 9, I do not drink heavily",,,,,,,,,,,,
+supplements,persnet_survey,,radio,"Have you cut back on performance enhancing <br/> drugs or supplements in the past 3 months?","1, Yes | 0, No | 9, I do not use performance enhancing <div style = ""padding-left:1em"">drugs or supplements</div>",,,,,,,,,,,,
+exercise,persnet_survey,,radio,"Have you exercised at least 3-4 times a week over <br/> the past 3 months?","1, Yes | 0, No",,,,,,,,,,,,
+diet,persnet_survey,,radio,"Did you eat a healthy diet regularly over the past <br/> 3 months?","1, Yes | 0, No",,,,,,,,,,,,
+health,persnet_survey,,checkbox,"In which areas do you feel you experience more <br/> health problems than the average person? 
+<span style = ""font-weight:lighter; font-style:italic"">(Select all that apply)</span>","1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems",,,,,,,,,,,,
+name1alcohol,persnet_survey,"Which people in your network do you think have cut back on heavy drinking of alcohol in the past 3 months? ",radio,[name1],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"[name_1] = ""1""",,,,names_smoking,,
+name2alcohol,persnet_survey,,radio,[name2],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"[name_2] = ""1""",,,,names_smoking,,
+name3alcohol,persnet_survey,,radio,[name3],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"[name_3] = ""1""",,,,names_smoking,,
+name4alcohol,persnet_survey,,radio,[name4],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"[name_4] = ""1""",,,,names_smoking,,
+name5alcohol,persnet_survey,,radio,[name5],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"[name_5] = ""1""",,,,names_smoking,,
+name6alcohol,persnet_survey,,radio,[name6],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"[name_6] = ""1""",,,,names_smoking,,
+name7alcohol,persnet_survey,,radio,[name7],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"[name_7] = ""1""",,,,names_smoking,,
+name8alcohol,persnet_survey,,radio,[name8],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"[name_8] = ""1""",,,,names_smoking,,
+name9alcohol,persnet_survey,,radio,[name9],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"[name_9] = ""1""",,,,names_smoking,,
+name10alcohol,persnet_survey,,radio,[name10],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"[name_10] = ""1""",,,,names_smoking,,
+name11alcohol,persnet_survey,,radio,[name11],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"[first] < 10 and [name_11] = ""1""",,,,names_smoking,,
+name12alcohol,persnet_survey,,radio,[name12],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,names_smoking,,
+name13alcohol,persnet_survey,,radio,[name13],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,names_smoking,,
+name14alcohol,persnet_survey,,radio,[name14],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,names_smoking,,
+name15alcohol,persnet_survey,,radio,[name15],"1, Yes | 0, No | 9, Does not drink heavily | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,names_smoking,,
+name1supp,persnet_survey,"Which people in your network do you think have cut back on performance enhancing drugs or supplements in the past 3 months?",radio,[name1],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"[name_1] = ""1""",,,,names_supp,,
+name2supp,persnet_survey,,radio,[name2],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"[name_2] = ""1""",,,,names_supp,,
+name3supp,persnet_survey,,radio,[name3],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"[name_3] = ""1""",,,,names_supp,,
+name4supp,persnet_survey,,radio,[name4],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"[name_4] = ""1""",,,,names_supp,,
+name5supp,persnet_survey,,radio,[name5],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"[name_5] = ""1""",,,,names_supp,,
+name6supp,persnet_survey,,radio,[name6],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"[name_6] = ""1""",,,,names_supp,,
+name7supp,persnet_survey,,radio,[name7],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"[name_7] = ""1""",,,,names_supp,,
+name8supp,persnet_survey,,radio,[name8],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"[name_8] = ""1""",,,,names_supp,,
+name9supp,persnet_survey,,radio,[name9],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"[name_9] = ""1""",,,,names_supp,,
+name10supp,persnet_survey,,radio,[name10],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"[name_10] = ""1""",,,,names_supp,,
+name11supp,persnet_survey,,radio,[name11],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"[first] < 10 and [name_11] = ""1""",,,,names_supp,,
+name12supp,persnet_survey,,radio,[name12],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,names_supp,,
+name13supp,persnet_survey,,radio,[name13],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,names_supp,,
+name14supp,persnet_survey,,radio,[name14],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,names_supp,,
+name15supp,persnet_survey,,radio,[name15],"1, Yes | 0, No | 9, Does not take performance enhancing drugs or supplements | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,names_supp,,
+name1exer,persnet_survey,"Which people in your network do you think have exercised at least 3-4 times a week in the past 3 months?",radio,[name1],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_1] = ""1""",,,,names_exercise,,
+name2exer,persnet_survey,,radio,[name2],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_2] = ""1""",,,,names_exercise,,
+name3exer,persnet_survey,,radio,[name3],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_3] = ""1""",,,,names_exercise,,
+name4exer,persnet_survey,,radio,[name4],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_4] = ""1""",,,,names_exercise,,
+name5exer,persnet_survey,,radio,[name5],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_5] = ""1""",,,,names_exercise,,
+name6exer,persnet_survey,,radio,[name6],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_6] = ""1""",,,,names_exercise,,
+name7exer,persnet_survey,,radio,[name7],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_7] = ""1""",,,,names_exercise,,
+name8exer,persnet_survey,,radio,[name8],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_8] = ""1""",,,,names_exercise,,
+name9exer,persnet_survey,,radio,[name9],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_9] = ""1""",,,,names_exercise,,
+name10exer,persnet_survey,,radio,[name10],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_10] = ""1""",,,,names_exercise,,
+name11exer,persnet_survey,,radio,[name11],"1, Yes | 0, No | 99, Don't know",,,,,,"[first] < 10 and [name_11] = ""1""",,,,names_exercise,,
+name12exer,persnet_survey,,radio,[name12],"1, Yes | 0, No | 99, Don't know",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,names_exercise,,
+name13exer,persnet_survey,,radio,[name13],"1, Yes | 0, No | 99, Don't know",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,names_exercise,,
+name14exer,persnet_survey,,radio,[name14],"1, Yes | 0, No | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,names_exercise,,
+name15exer,persnet_survey,,radio,[name15],"1, Yes | 0, No | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,names_exercise,,
+name1diet,persnet_survey,"Which people in your network do you think have eaten a healthy diet regularly over the past 3 months?",radio,[name1],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_1] = ""1""",,,,names_healthy_diet,,
+name2diet,persnet_survey,,radio,[name2],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_2] = ""1""",,,,names_healthy_diet,,
+name3diet,persnet_survey,,radio,[name3],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_3] = ""1""",,,,names_healthy_diet,,
+name4diet,persnet_survey,,radio,[name4],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_4] = ""1""",,,,names_healthy_diet,,
+name5diet,persnet_survey,,radio,[name5],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_5] = ""1""",,,,names_healthy_diet,,
+name6diet,persnet_survey,,radio,[name6],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_6] = ""1""",,,,names_healthy_diet,,
+name7diet,persnet_survey,,radio,[name7],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_7] = ""1""",,,,names_healthy_diet,,
+name8diet,persnet_survey,,radio,[name8],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_8] = ""1""",,,,names_healthy_diet,,
+name9diet,persnet_survey,,radio,[name9],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_9] = ""1""",,,,names_healthy_diet,,
+name10diet,persnet_survey,,radio,[name10],"1, Yes | 0, No | 99, Don't know",,,,,,"[name_10] = ""1""",,,,names_healthy_diet,,
+name11diet,persnet_survey,,radio,[name11],"1, Yes | 0, No | 99, Don't know",,,,,,"[first] < 10 and [name_11] = ""1""",,,,names_healthy_diet,,
+name12diet,persnet_survey,,radio,[name12],"1, Yes | 0, No | 99, Don't know",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,names_healthy_diet,,
+name13diet,persnet_survey,,radio,[name13],"1, Yes | 0, No | 99, Don't know",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,names_healthy_diet,,
+name14diet,persnet_survey,,radio,[name14],"1, Yes | 0, No | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,names_healthy_diet,,
+name15diet,persnet_survey,,radio,[name15],"1, Yes | 0, No | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,names_healthy_diet,,
+name1health,persnet_survey,"In which areas do people in your network experience health problems that are more than typical for an average person? (Select all that apply)
+",checkbox,[name1],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"[name_1] = ""1""",,,,names_healthproblems,,
+name2health,persnet_survey,,checkbox,[name2],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"[name_2] = ""1""",,,,names_healthproblems,,
+name3health,persnet_survey,,checkbox,[name3],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"[name_3] = ""1""",,,,names_healthproblems,,
+name4health,persnet_survey,,checkbox,[name4],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"[name_4] = ""1""",,,,names_healthproblems,,
+name5health,persnet_survey,,checkbox,[name5],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"[name_5] = ""1""",,,,names_healthproblems,,
+name6health,persnet_survey,,checkbox,[name6],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"[name_6] = ""1""",,,,names_healthproblems,,
+name7health,persnet_survey,,checkbox,[name7],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"[name_7] = ""1""",,,,names_healthproblems,,
+name8health,persnet_survey,,checkbox,[name8],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"[name_8] = ""1""",,,,names_healthproblems,,
+name9health,persnet_survey,,checkbox,[name9],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"[name_9] = ""1""",,,,names_healthproblems,,
+name10health,persnet_survey,,checkbox,[name10],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"[name_10] = ""1""",,,,names_healthproblems,,
+name11health,persnet_survey,,checkbox,[name11],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"[first] < 10 and [name_11] = ""1""",,,,names_healthproblems,,
+name12health,persnet_survey,,checkbox,[name12],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,names_healthproblems,,
+name13health,persnet_survey,,checkbox,[name13],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,names_healthproblems,,
+name14health,persnet_survey,,checkbox,[name14],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,names_healthproblems,,
+name15health,persnet_survey,,checkbox,[name15],"1, General Health | 2, Pain | 3, Cognitive/Mental Health | 4, Cardiac | 0, No Health Problems | 99, Don't know",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,names_healthproblems,,
+name1dist,persnet_survey,"How far does each person live from you?",radio,[name1],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"[name_1] = ""1""",,,,distance,,
+name2dist,persnet_survey,,radio,[name2],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"[name_2] = ""1""",,,,distance,,
+name3dist,persnet_survey,,radio,[name3],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"[name_3] = ""1""",,,,distance,,
+name4dist,persnet_survey,,radio,[name4],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"[name_4] = ""1""",,,,distance,,
+name5dist,persnet_survey,,radio,[name5],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"[name_5] = ""1""",,,,distance,,
+name6dist,persnet_survey,,radio,[name6],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"[name_6] = ""1""",,,,distance,,
+name7dist,persnet_survey,,radio,[name7],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"[name_7] = ""1""",,,,distance,,
+name8dist,persnet_survey,,radio,[name8],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"[name_8] = ""1""",,,,distance,,
+name9dist,persnet_survey,,radio,[name9],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"[name_9] = ""1""",,,,distance,,
+name10dist,persnet_survey,,radio,[name10],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"[name_10] = ""1""",,,,distance,,
+name11dist,persnet_survey,,radio,[name11],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"[first] < 10 and [name_11] = ""1""",,,,distance,,
+name12dist,persnet_survey,,radio,[name12],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"sum([first],[name_11])<10 and [name_12]=""1""",,,,distance,,
+name13dist,persnet_survey,,radio,[name13],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"sum([first],[name_11],[name_12])<10 and [name_13]=""1""",,,,distance,,
+name14dist,persnet_survey,,radio,[name14],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"sum([first],[name_11],[name_12],[name_13])<10 and [name_14]=""1""",,,,distance,,
+name15dist,persnet_survey,,radio,[name15],"1, Same house | 2, 0-5 miles | 3, 6-15 miles | 4, 16-50 miles | 5, 50+ miles",,,,,,"sum([first],[name_11],[name_12],[name_13],[name_14])<10 and [name_15]=""1""",,,,distance,,
+nfl_team,persnet_survey,"<u><font size=3>Your Football History</u></font>",dropdown,"Which NFL team do you primarily identify with?","1, 49ers | 2, Bears | 3, Bengals | 4, Bills | 5, Broncos | 6, Browns | 7, Buccaneers | 8, Cardinals | 9, Chargers | 10, Chiefs | 11, Colts | 12, Cowboys | 13, Dolphins | 14, Eagles | 15, Falcons | 16, Giants | 17, Jaguars | 18, Jets | 19, Lions | 20, Packers | 21, Panthers | 22, Patriots | 23, Raiders | 24, Rams | 25, Ravens | 26, Redskins | 27, Saints | 28, Seahawks | 29, Steelers | 30, Texans | 31, Titans | 32, Vikings","This is not necessarily the team <br/> for which you played the longest.",,,,,,,,,,,
+team_years,persnet_survey,,text,"How many years did you play for the team <br/>selected above?",,,integer,1,50,,,,,,,,
+number_teams,persnet_survey,,dropdown,"How many different NFL teams did you play <br/> with during your career?","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 19, 19 | 20, 20 | 21, 21 | 22, 22 | 23, 23 | 24, 24 | 25, 25 | 26, 26 | 27, 27 | 28, 28 | 29, 29 | 30, 30 | 31, 31 | 32, 32",,,,,,,,,,,,
+difficulties,persnet_survey,"<u><font size=3>Finally...</u></font>",yesno,"Did you encounter any technical difficulties <br/> during this survey?",,,,,,,,,,,,,
+followup,persnet_survey,,yesno,"You have provided important information <br/> regarding the personal networks of athletes. <br/> We are interested in seeing how personal <br/> networks change over time. Would you be <br/> interested in being contacted in the future <br/> for a follow up study?",,,,,,,,,,,,,
+hearabout,persnet_survey,,checkbox,"How did you hear about the personal network <br/> survey? <span style = ""font-weight:lighter; font-style:italic"">(Select all that apply)</span>","email, Email from the Football Players Health Study | socmed, Football Players Health Study Social Media | fbfriend, From a friend who is a former player | spouse, From a spouse/partner | other, Other",,,,,,,,,,,,
+hearabout_exp,persnet_survey,,text,"Please specify:",,,,,,,"[hearabout(other)] = '1'",,,,,,@CHARLIMIT=20
