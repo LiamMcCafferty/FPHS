@@ -21,7 +21,7 @@ rm(list = ls())
 #To set to own working directory
 #  select "Session->Set Working Directory->To Source File Location"
 #  then copy result in console into current "setwd("")".
-setwd("~/Desktop/FPHS Analysis")
+setwd("~/Desktop/FPHS Analysis/Final Processing Set")
 
 #Importing packages. If not yet installed, packages can be installed by going to:
 #  Tools -> Install Packages, then enter their exact names from within each
@@ -138,7 +138,7 @@ rm(zip_import,col_logic,zip_logic)
 #stu_work: Is the Ego a working student?
 #  (Working Student, Student)
 
-employment <- select(sample_data, employment___1:employment___5)
+employment <- select(sample_data, study_id, employment___1:employment___5)
 employment$stu_work <-employment$unemployed <- NA
 employment$emp_nfl <- employment$employed <- NA
 
@@ -195,7 +195,11 @@ employment$unemployed <- factor(employment$unemployed,
 
 employment$stu_work <-   factor(employment$stu_work,
                                 levels = c("Student","Working Student"))
-#AD: Add relevant columns to sample data. Can check with names(sample_data)
+
+employment <- select(employment, -employment___1:-employment___5)
+
+sample_data <- left_join(sample_data, employment, by = "study_id")
+
 
 #Ego Occupation################################################################
 sample_data$occupation <- factor(sample_data$occupation, levels = c("1", "2", 

@@ -1,0 +1,83 @@
+Field,Type,Question Number,Key,Description
+persnet_id,integer,NA,-,Personal Network ID
+dob,Datetime ('YYYY-MM-DD'),Q1,-,"Date of birth, if dob was blank filled with profootballreference.com"
+startplay_age,integer,Q9,-,Age started playing
+num_seasons,integer,Q10,-,Number of seasons played
+position___1,integer,Q13,"1 = Yes, 0 = No","position player has played (checkbox, binary), Offensive Line"
+position___2,integer,Q13,"1 = Yes, 0 = No","position player has played (checkbox, binary), Defensive Line"
+position___3,integer,Q13,"1 = Yes, 0 = No","position player has played (checkbox, binary), Linebacker"
+position___4,integer,Q13,"1 = Yes, 0 = No","position player has played (checkbox, binary), Defensive Back"
+position___5,integer,Q13,"1 = Yes, 0 = No","position player has played (checkbox, binary), Running Back"
+position___6,integer,Q13,"1 = Yes, 0 = No","position player has played (checkbox, binary), Wide Receiver"
+position___7,integer,Q13,"1 = Yes, 0 = No","position player has played (checkbox, binary), Tight End"
+position___8,integer,Q13,"1 = Yes, 0 = No","position player has played (checkbox, binary), Quarterback"
+position___9,integer,Q13,"1 = Yes, 0 = No","position player has played (checkbox, binary), Kicker/Punter"
+position___10,integer,Q13,"1 = Yes, 0 = No","position player has played (checkbox, binary), Special Teams"
+promis1,integer,Q14," 5=Excellent, 4=Very Good, 3=Good, 2=Fair, 1=Poor","In general, would you say your health is"
+promis2,integer,Q15," 5=Excellent, 4=Very Good, 3=Good, 2=Fair, 1=Poor","In general, would you say your quality of life is"
+promis3,integer,Q16," 5=Excellent, 4=Very Good, 3=Good, 2=Fair, 1=Poor","In general, how would you rate your physical health"
+promis4,integer,Q17," 5=Excellent, 4=Very Good, 3=Good, 2=Fair, 1=Poor","In general how would you rate your mental health, including your mood and ability to think"
+promis5,integer,Q18," 5=Excellent, 4=Very Good, 3=Good, 2=Fair, 1=Poor","In general, how would you rate your satisfaction with your social activities and relationships"
+promis6,integer,Q19," 5=Excellent, 4=Very Good, 3=Good, 2=Fair, 1=Poor","To what extent are you able to carry out everyday activities such as walking, climbing stairs, or carrying groceries"
+promis7,integer,Q20," 5=Excellent, 4=Very Good, 3=Good, 2=Fair, 1=Poor","In the past 7 days, how would you rate your pain on average"
+promis8,integer,Q21," 5=Excellent, 4=Very Good, 3=Good, 2=Fair, 1=Poor","In the past 7 days, how would you rate your fatigue on average"
+promis9,integer,Q22," 5=Excellent, 4=Very Good, 3=Good, 2=Fair, 1=Poor","In the past 7 days, how ofter have you been bothered by emotional problems such as feeling anxious, depressed or irritable"
+nqcog1,integer,Q46,"5=Never, 4=Rarely (once), 3=Sometimes (2-3 times), 2=Often (about once a day), 1=Very Often (Several times a day)","In the past 7 days, I had to read something several times to understand it"
+nqcog2,integer,Q47,"5=Never, 4=Rarely (once), 3=Sometimes (2-3 times), 2=Often (about once a day), 1=Very Often (Several times a day)","In the past 7 days, I had trouble keeping track of what I was doing if I was interrupted"
+nqcog3,integer,Q48,"5=Never, 4=Rarely (once), 3=Sometimes (2-3 times), 2=Often (about once a day), 1=Very Often (Several times a day)","In the past 7 days, I had difficulty doing more than one thing at a time"
+nqcog4,integer,Q49,"5=Never, 4=Rarely (once), 3=Sometimes (2-3 times), 2=Often (about once a day), 1=Very Often (Several times a day)","In the past 7 days, I had trouble remembering new information, like phone numbers or simple instructions"
+nqcog5,integer,Q50,"5=Never, 4=Rarely (once), 3=Sometimes (2-3 times), 2=Often (about once a day), 1=Very Often (Several times a day)","In the past 7 days, I had trouble thinking clearly"
+nqcog6,integer,Q51,"5=Never, 4=Rarely (once), 3=Sometimes (2-3 times), 2=Often (about once a day), 1=Very Often (Several times a day)","In the past 7 days, my thinking was slow"
+nqcog7,integer,Q52,"5=Never, 4=Rarely (once), 3=Sometimes (2-3 times), 2=Often (about once a day), 1=Very Often (Several times a day)","In the past 7 days, I had to work really hard to pay attention or I would make a mistake"
+nqcog8,integer,Q53,"5=Never, 4=Rarely (once), 3=Sometimes (2-3 times), 2=Often (about once a day), 1=Very Often (Several times a day)","In the past 7 days, I had trouble concentration"
+nqcog9,integer,Q54,"5=Never, 4=Rarely (once), 3=Sometimes (2-3 times), 2=Often (about once a day), 1=Very Often (Several times a day)","In the past 7 days, I had trouble remembering whether I did things I was supposed to do"
+nqcog10,integer,Q55,"5=Never, 4=Rarely (once), 3=Sometimes (2-3 times), 2=Often (about once a day), 1=Very Often (Several times a day)","In the past 7 days, I had trouble making decisions"
+nqcog11,integer,Q56,"5=Never, 4=Rarely (once), 3=Sometimes (2-3 times), 2=Often (about once a day), 1=Very Often (Several times a day)","In the past 7 days, I had trouble planning out steps of a task."
+primary_care_provider,integer,Q57,"1 = Yes, 0 = No",Q57 Do you have a doctor (primary care provider) that you see at least once every 3 years:
+other_health_professional,integer,Q58,"1 = Yes, 0 = No","Q58 Do you have a physical therapist, chiropracter, or health professional you have seen in the past 3 years:"
+surgery_knee,integer,Q65,"1 = Yes, 0 = No",Q65.1 Since leaving active professional play have you had any of the following surgical procedures? Knee Joint Replacement:
+surgery_knee_years,text,Q65,Write in response,Q65.1 Since leaving active professional play have you had any of the following surgical procedures? Knee Joint Replacement:
+surgery_hip,integer,Q65,"1 = Yes, 0 = No",Q65.2 Since leaving active professional play have you had any of the following surgical procedures? Hip Joint Replacement:
+surgery_hip_years,text,Q65,Write in response,Q65.2 Since leaving active professional play have you had any of the following surgical procedures? Hip Joint Replacement:
+surgery_cardiac,integer,Q65,"1 = Yes, 0 = No","Q65.3 Since leaving active professional play have you had any of the following surgical procedures? Heart Bypass, Angioplasty or Stent Placement:"
+surgery_cardiac_years,text,Q65,Write in response,"Q65.3 Since leaving active professional play have you had any of the following surgical procedures? Heart Bypass, Angioplasty or Stent Placement:"
+surgery_cataract,integer,Q65,"1 = Yes, 0 = No",Q65.4 Since leaving active professional play have you had any of the following surgical procedures? Cataract Surgery:
+surgery_cataract_years,text,Q65,Write in response,Q65.4 Since leaving active professional play have you had any of the following surgical procedures? Cataract Surgery:
+surgery_neckspine,integer,Q65,"1 = Yes, 0 = No",Q65.5 Since leaving active professional play have you had any of the following surgical procedures? Neck/Spine Surgery:
+surgery_neckspine_years,text,Q65,Write in response,Q65.5 Since leaving active professional play have you had any of the following surgical procedures? Neck/Spine Surgery:
+surgery_back,integer,Q65,"1 = Yes, 0 = No",Q65.6 Since leaving active professional play have you had any of the following surgical procedures? Back (Lumbar) Surgery:
+surgery_back_years,text,Q65,Write in response,Q65.6 Since leaving active professional play have you had any of the following surgical procedures? Back (Lumbar) Surgery:
+surgery_other,integer,Q65,"1 = Yes, 0 = No",Q65.7 Since leaving active professional play have you had any of the following surgical procedures? Other (Please list Surgery):
+surgery_other_type,text,Q65,Write in response,"Q65.7 Since leaving active professional play have you had any of the following surgical procedures? Other (Please list Surgery): Text input of surgery type"""
+operator65,integer,Q65,"1 = Yes, 0 = No","Unknown"""
+surgery_other_years,text,Q65,Write in response,Q65.7 Since leaving active professional play have you had any of the following surgical procedures? Other (Years):
+health_heartattack,integer,Q67,"1 = Yes, 0 = No",Q67.1 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Heart Attack:
+health_heartattack_years,text,Q67,Write in response,Q67.1 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Heart Attack:
+health_stroke,integer,Q67,"1 = Yes, 0 = No",Q67.2 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Stroke:
+health_stroke_years,text,Q67,Write in response,Q67.2 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Stroke:
+health_sleepapnea,integer,Q67,"1 = Yes, 0 = No",Q67.3 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Sleep Apnea:
+health_sleepapnea_years,text,Q67,Write in response,Q67.3 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Sleep Apnea:
+health_dementia,integer,Q67,"1 = Yes, 0 = No",Q67.4 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Dementia (Alzeimer's Disease):
+health_dementia_years,text,Q67,Write in response,Q67.4 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Dementia (Alzeimer's Disease):
+health_cte,integer,Q67,"1 = Yes, 0 = No",Q67.5 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Chronic Traumatic Encephalopathy (CTE):
+health_cte_years,text,Q67,Write in response,Q67.5 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Chronic Traumatic Encephalopathy (CTE):
+health_parkinsons,integer,Q67,"1 = Yes, 0 = No",Q67.6 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Parkinson's Disease:
+health_parkinsons_years,text,Q67,Write in response,Q67.6 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Parkinson's Disease:
+health_arthritis,integer,Q67,"1 = Yes, 0 = No",Q67.7 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Arthritis:
+health_arthritis_years,text,Q67,Write in response,Q67.7 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Arthritis:
+health_als,integer,Q67,"1 = Yes, 0 = No",Q67.8 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Amyotrphic Lateral Sclerosis (ALS: Lou Gehrig's Disease):
+health_als_years,text,Q67,Write in response,Q67.8 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Amyotrphic Lateral Sclerosis (ALS: Lou Gehrig's Disease):
+health_kidney,integer,Q67,"1 = Yes, 0 = No",Q67.9 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Renal (Kidney) Disease:
+health_kidney_years,text,Q67,Write in response,Q67.9 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Renal (Kidney) Disease:
+health_cancer,integer,Q67,"1 = Yes, 0 = No",Q67.10 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Cancer:
+health_cancer_type,text,Q67,Write in response,Q67.10 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Cancer (Type):
+operator67,integer,Q67,"1 = Yes, 0 = No","Q67.10 unknown"""
+health_cancer_years,text,Q67,Write in response,Q67.10 Has a health care provider ever told you that you have had any of the following diagnoses or health outcomes? Cancer:
+player_position1,text,Q13,"Possible Values: Offensive Line, Defensive Line, Linebacker, Defensive Back, Running Back, Wide Receiver, Tight End, Quarterback, Kicker/Punter, Special Teams","Processed Question Answer, determined from Q13 values. 1st possible answer"
+player_position2,text,Q13,"Possible Values: Offensive Line, Defensive Line, Linebacker, Defensive Back, Running Back, Wide Receiver, Tight End, Quarterback, Kicker/Punter, Special Teams","Processed Question Answer, determined from Q13 values. 2nd possible answer"
+surgery1,text,Q65,"Possible Values: Knee Joint Replacement, Hip Joint Replacement, Cardiac, Cataract, Neck/Spine, Back, Other","Processed Question Answer, determined from Q65 values. 1st possible answer"
+surgery2,text,Q65,"Possible Values: Knee Joint Replacement, Hip Joint Replacement, Cardiac, Cataract, Neck/Spine, Back, Other","Processed Question Answer, determined from Q65 values. 2nd possible answer"
+surgery3,text,Q65,"Possible Values: Knee Joint Replacement, Hip Joint Replacement, Cardiac, Cataract, Neck/Spine, Back, Other","Processed Question Answer, determined from Q65 values. 3rd possible answer"
+disease1,text,Q67,"Possible Values: Heart attack, Stroke, Sleep Apnea, Dementia, CTE, Parkinsons, Arthritis, ALS, Kidney Disease, Cancer","Processed Question Answer, determined from Q67 values. 1st possible answer"
+disease2,text,Q67,"Possible Values: Heart attack, Stroke, Sleep Apnea, Dementia, CTE, Parkinsons, Arthritis, ALS, Kidney Disease, Cancer","Processed Question Answer, determined from Q67 values. 2nd possible answer"
+disease3,text,Q67,"Possible Values: Heart attack, Stroke, Sleep Apnea, Dementia, CTE, Parkinsons, Arthritis, ALS, Kidney Disease, Cancer","Processed Question Answer, determined from Q67 values. 3rd possible answer"
