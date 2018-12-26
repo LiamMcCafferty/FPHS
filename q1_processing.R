@@ -1,4 +1,19 @@
-#Code designed to process raw data from the q1_survey into useable form.
+################################################################################
+# PROJECT: Harvard NFL Players Health Study 
+# PURPOSE: Import raw data from Q1 survey and turn into compatible data
+# DIR:     "~/Desktop/NPHS Analysis"
+# INPUTS:  Fake data created in Q1 survey ("q1_test_data.csv") 
+#          Can be replaced with real data of participants.
+# OUTPUTS: A q1_processed.rda file that contains data on each q1/persnet
+#            participant.
+# AUTHORS: Liam McCafferty, Amar Dhand
+# CREATED: 12/13/18
+# LATEST:  12/26/18
+# PSERIES: NA
+# NSERIES: NA
+# NOTES:   Code designed to process rawdata from q1_survey into useable form
+# ##############################################################################
+
 #Optionally you can load the annotated dataset made in file
 #"understanding_data.R" and use function comment() to understand original
 #variables.
@@ -21,8 +36,13 @@ dataset <- read.csv("q1_test_data.csv")
 dataset_character <- read.csv("q1_test_data.csv", colClasses = "character")
 
 #Eliminating non "_etl" variables in datasets
-dataset_character <- dataset_character %>% select(persnet_id, dob_etl, startplay_age_etl, numb_season_etl, position___1_etl:yr_dx_cancer)
-dataset <- dataset %>% select(persnet_id, dob_etl, startplay_age_etl, numb_season_etl, position___1_etl:yr_dx_cancer)
+dataset_character <- dataset_character %>%
+  select(persnet_id, dob_etl,startplay_age_etl, numb_season_etl,
+         position___1_etl:yr_dx_cancer)
+
+dataset <- dataset %>%
+  select(persnet_id, dob_etl, startplay_age_etl, numb_season_etl,
+         position___1_etl:yr_dx_cancer)
 
 
 
