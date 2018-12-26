@@ -7,7 +7,7 @@
 # OUTPUTS: A ego_data.rda file that contains data on Ego.
 # AUTHORS: Liam McCafferty, Abby Halm, Nuzulul Kurniansyah, Amar Dhand
 # CREATED: 10/29/18
-# LATEST:  11/6/18
+# LATEST:  12/26/18
 # PSERIES: NA
 # NSERIES: NA
 # NOTES:   Adapted from Personal Health Survey Clean Data 1 code, found at:
@@ -200,6 +200,7 @@ employment <- select(employment, -employment___1:-employment___5)
 
 sample_data <- left_join(sample_data, employment, by = "study_id")
 
+#To test, use table() to ensure totals add up.
 
 #Ego Occupation################################################################
 sample_data$occupation <- factor(sample_data$occupation, levels = c("1", "2", 
